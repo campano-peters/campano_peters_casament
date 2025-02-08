@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Boda Albert y Mar</title>
-    <link rel="stylesheet" href="css/styles.css">  <!-- Enlace al archivo CSS -->
+    <title>Ens Casem - Albert & Mar</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script defer src="assets/js/translations.js"></script>
+    <script defer src="assets/js/script.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Boda de Albert Campano y Mar Peters</h1>
-        <p class="date">El 20 de septiembre de 2025</p>
-        <p class="under-construction">Página en construcción...</p>
-    </div>
+    <header>
+        <img src="assets/images/header.jpg" alt="Albert & Mar">
+        <h1 id="title">Ens casem</h1>
+        <nav>
+            <button onclick="changeLanguage('ca')">Català</button>
+            <button onclick="changeLanguage('es')">Español</button>
+            <button onclick="changeLanguage('en')">English</button>
+        </nav>
+    </header>
+    <main>
+        <p id="under-construction">Under Construction</p>
+    </main>
 </body>
 </html>
