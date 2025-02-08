@@ -6,4 +6,5 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("event-location").textContent = texts.eventLocation;
     document.getElementById("invitation-message").textContent = texts.invitationMessage;
     document.getElementById("invitation-details").textContent = texts.invitationDetails;
+    document.getElementById("maps-link").textContent = texts.mapsLink;
 });
