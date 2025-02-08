@@ -6,7 +6,7 @@ body {
     text-align: center;
 }
 header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     background: #BFD1B3;
     padding: 10px 0;
@@ -26,7 +26,7 @@ header img {
     display: block;
 }
 main {
-    padding-top: 120px; /* Espacio suficiente para que no quede tapado por el header */
+    margin-top: 120px; /* Espacio suficiente para que no quede tapado por el header */
     padding: 20px;
 }
 a#maps-link {
