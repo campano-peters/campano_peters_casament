@@ -20,7 +20,7 @@ header img {
     height: auto;
 }
 main {
-    padding-top: 120px;
+    margin-top: 80px; /* Ajustado para que el main empiece pegado al header */
     padding: 20px;
 }
 a#maps-link {
