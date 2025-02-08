@@ -9,7 +9,7 @@ header {
     position: fixed;
     width: 100%;
     background: #BFD1B3;
-    padding: 10px;
+    padding: 10px 0;
     top: 0;
     left: 0;
     z-index: 1000;
@@ -18,9 +18,10 @@ header {
 header img {
     width: 100%;
     height: auto;
+    display: block;
 }
 main {
-    margin-top: 40px; /* Ajustado para que el main empiece pegado al header */
+    padding-top: calc(10px + 60px + 20px); /* Ajusta según el tamaño del header */
     padding: 20px;
 }
 a#maps-link {
