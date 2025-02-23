@@ -15,10 +15,10 @@
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
-	
-	<link href="https://fonts.googleapis.com/css?family=Montez" rel="stylesheet">
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
-	
+
+	<!--<link href="https://db.onlinewebfonts.com/c/b4d584ed0e53ba94a815f817690faab2?family=Brittany+Signature" rel="stylesheet"> -->
+	<!--<link href="https://db.onlinewebfonts.com/c/351c65048c69125fa2f3421ec197545d?family=Aileron" rel="stylesheet"> -->
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -29,7 +29,7 @@
 	<link rel="stylesheet" href="css/superfish.css">
 	<!-- Magnific Popup -->
 	<link rel="stylesheet" href="css/magnific-popup.css">
-	
+
 	<link rel="stylesheet" href="css/style.css">
 
 
@@ -44,7 +44,7 @@
 	<body>
 		<div id="fh5co-wrapper">
 		<div id="fh5co-page">
-	
+
 		<div class="fh5co-hero" data-section="home">
 			<div class="fh5co-overlay"></div>
 			<div class="fh5co-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/cover_bg_1.jpg);">
@@ -68,20 +68,22 @@
 			<div class="container">
 				<div class="nav-header">
 					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
-					<h1 id="fh5co-logo"><a href="index.html">Text a omplir</a></h1>
+					<h1 id="fh5co-logo"><a href="index.html"></a></h1>
 					<!-- START #fh5co-menu-wrap -->
 					<nav id="fh5co-menu-wrap" role="navigation">
 						<ul class="sf-menu" id="fh5co-primary-menu">
-							<li class="active"><a href="index.html" >Home</a></li>
-							<li><a href="when-where.html">Quan &amp; on</a></li>
-							<li><a href="confirmation.html">Confirmació</a></li>
+							<li class="active"><a href="index.html" >Inici</a></li>
+							<li><a href="#fh5co-when-where">Quan &amp; on</a></li>
+							<li><a href="#fh5co-started">Confirmació</a></li>
+							<!--
 							<li>
-								<a href="groom-bride.html" class="fh5co-sub-ddown">Altres</a>
+								<a href="index.html" class="fh5co-sub-ddown">Altres</a>
 								<ul class="fh5co-sub-menu">
 									<li><a href="timeline.html">Timeline</a></li>
 									<li><a href="dresscode.html">Dress code</a></li>
 								</ul>
 							</li>
+							-->
 						</ul>
 					</nav>
 				</div>
@@ -89,7 +91,20 @@
 		</header>
 
 		<!-- end:header-top -->
-		
+
+		<div id="fh5co-countdown">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center animate-box">
+					<p class="countdown">
+						<span id="days"></span>
+						<span id="hours"></span>
+						<span id="minutes"></span>
+						<span id="seconds"></span>
+					</p>
+				</div>
+			</div>
+		</div>
+
 		<div id="fh5co-couple" class="fh5co-section-gray">
 			<div class="container">
 				<div class="row row-bottom-padded-md animate-box">
@@ -115,19 +130,74 @@
 				</div>
 			</div>
 		</div>
-		<div id="fh5co-countdown">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center animate-box">
-					<p class="countdown">
-						<span id="days"></span>
-						<span id="hours"></span>
-						<span id="minutes"></span>
-						<span id="seconds"></span>
-					</p>
+
+		<div id="fh5co-when-where" class="fh5co-section-gray">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center heading-section animate-box">
+						<h2>Quan &amp; On</h2>
+					</div>
+				</div>
+				<div class="row row-bottom-padded-md">
+					<div class="wedding-events">
+						<div class="ceremony-bg" style="background-image: url(images/wed-party.jpg);"></div>
+						<div class="desc">
+							<h3>Wedding Party</h3>
+							<p><strong>Dissabte, 20 de setembre de 2025, 19:00 h - 00:00 h @ Can Rosich</strong></p>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div id="map" class="fh5co-map">
+							<iframe
+								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.3932066856223!2d2.6934431765928646!3d41.64724567983566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12bb395500c6db1b%3A0xa0b3fdfd279ba645!2sCan%20Rosich!5e0!3m2!1sen!2ses!4v1739035115743!5m2!1sen!2ses"
+								width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+							</iframe>
+						</div>
+						<br>
+						<a href="https://www.google.com/maps?q=41.647232,2.696016" target="_blank" class="btn btn-primary">
+							📍 Obrir a Google Maps
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
-		
+
+		<div id="fh5co-started" style="background-image:url(images/cover_bg_2.jpg);" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+				<div class="container">
+					<div class="row animate-box">
+						<div class="col-md-8 col-md-offset-2 text-center heading-section">
+							<h2>Vindràs?</h2>
+							<p>Omple el formulari per saber que vindras. Gracies.
+						</div>
+					</div>
+					<div class="row animate-box">
+						<div class="col-md-10 col-md-offset-1">
+							<form class="form-inline">
+								<div class="col-md-4 col-sm-4">
+									<div class="form-group">
+										<label for="name" class="sr-only">Nom</label>
+										<input type="name" class="form-control" id="name" placeholder="Nom">
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<div class="form-group">
+										<label for="email" class="sr-only">Correu</label>
+										<input type="email" class="form-control" id="email" placeholder="Correu">
+									</div>
+								</div>
+								<div class="col-md-4 col-sm-4">
+									<button type="submit" class="btn btn-primary btn-block">Asistire</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
 		<footer>
 			<div id="footer">
 				<div class="container">
@@ -150,7 +220,7 @@
 			</div>
 		</footer>
 
-	
+
 
 	</div>
 	<!-- END fh5co-page -->
