@@ -574,6 +574,9 @@ figure {
 	}
 }
 
+#fh5co-confirmation,
+#fh5co-remuneration,
+#fh5co-extra,
 #fh5co-couple,
 #fh5co-countdown,
 #fh5co-groom-bride,
@@ -589,7 +592,11 @@ figure {
 	}
 
 }
-.fh5co-section-gray{
+.fh5co-section-green{
+	background: $brand-light-color;
+}
+
+.fh5co-section-green-2{
 	background: $brand-light-color;
 }
 
