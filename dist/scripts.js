@@ -10,33 +10,33 @@ void 0===c?d&&"get"in d&&null!==(e=d.get(a,b))?e:(e=n.find.attr(a,b),null==e?voi
  * to offer multiple easing options
  *
  * TERMS OF USE - jQuery Easing
- * 
- * Open source under the BSD License. 
- * 
+ *
+ * Open source under the BSD License.
+ *
  * Copyright Ã‚Â© 2008 George McGinley Smith
  * All rights reserved.
- * 
- * Redistribution and use in source and binary forms, with or without modification, 
+ *
+ * Redistribution and use in source and binary forms, with or without modification,
  * are permitted provided that the following conditions are met:
- * 
- * Redistributions of source code must retain the above copyright notice, this list of 
+ *
+ * Redistributions of source code must retain the above copyright notice, this list of
  * conditions and the following disclaimer.
- * Redistributions in binary form must reproduce the above copyright notice, this list 
- * of conditions and the following disclaimer in the documentation and/or other materials 
+ * Redistributions in binary form must reproduce the above copyright notice, this list
+ * of conditions and the following disclaimer in the documentation and/or other materials
  * provided with the distribution.
- * 
- * Neither the name of the author nor the names of contributors may be used to endorse 
+ *
+ * Neither the name of the author nor the names of contributors may be used to endorse
  * or promote products derived from this software without specific prior written permission.
- * 
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY 
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
  * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
  * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
  *  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
  *  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
- *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED 
+ *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
  * AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
- * OF THE POSSIBILITY OF SUCH DAMAGE. 
+ *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+ * OF THE POSSIBILITY OF SUCH DAMAGE.
  *
 */
 
@@ -152,7 +152,7 @@ jQuery.extend( jQuery.easing,
 		return c*((t=t/d-1)*t*((s+1)*t + s) + 1) + b;
 	},
 	easeInOutBack: function (x, t, b, c, d, s) {
-		if (s == undefined) s = 1.70158; 
+		if (s == undefined) s = 1.70158;
 		if ((t/=d/2) < 1) return c/2*(t*t*(((s*=(1.525))+1)*t - s)) + b;
 		return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
 	},
@@ -179,33 +179,33 @@ jQuery.extend( jQuery.easing,
 /*
  *
  * TERMS OF USE - EASING EQUATIONS
- * 
- * Open source under the BSD License. 
- * 
+ *
+ * Open source under the BSD License.
+ *
  * Copyright Ã‚Â© 2001 Robert Penner
  * All rights reserved.
- * 
- * Redistribution and use in source and binary forms, with or without modification, 
+ *
+ * Redistribution and use in source and binary forms, with or without modification,
  * are permitted provided that the following conditions are met:
- * 
- * Redistributions of source code must retain the above copyright notice, this list of 
+ *
+ * Redistributions of source code must retain the above copyright notice, this list of
  * conditions and the following disclaimer.
- * Redistributions in binary form must reproduce the above copyright notice, this list 
- * of conditions and the following disclaimer in the documentation and/or other materials 
+ * Redistributions in binary form must reproduce the above copyright notice, this list
+ * of conditions and the following disclaimer in the documentation and/or other materials
  * provided with the distribution.
- * 
- * Neither the name of the author nor the names of contributors may be used to endorse 
+ *
+ * Neither the name of the author nor the names of contributors may be used to endorse
  * or promote products derived from this software without specific prior written permission.
- * 
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY 
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
  * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
  * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
  *  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
  *  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
- *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED 
+ *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
  * AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
- * OF THE POSSIBILITY OF SUCH DAMAGE. 
+ *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+ * OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
 /*!
@@ -709,19 +709,19 @@ $(document).ready(function() {
     });
 	};
 
-	
 
 
-	// Call the functions 
+
+	// Call the functions
 	magnifPopup();
 	magnifVideo();
 
 });
 ;(function () {
-	
+
 	'use strict';
 
-	// iPad and iPod detection	
+	// iPad and iPod detection
 	var isiPad = function(){
 		return (navigator.platform.indexOf("iPad") != -1);
 	};
@@ -729,7 +729,7 @@ $(document).ready(function() {
 
 	var isiPhone = function(){
 	    return (
-			(navigator.platform.indexOf("iPhone") != -1) || 
+			(navigator.platform.indexOf("iPhone") != -1) ||
 			(navigator.platform.indexOf("iPod") != -1)
 	    );
 	};
@@ -797,11 +797,11 @@ $(document).ready(function() {
 				}
 			}
 
-		});	
+		});
 
 	}
 
-	
+
 
 	// Click outside of the Mobile Menu
 	var mobileMenuOutsideClick = function() {
@@ -823,7 +823,7 @@ $(document).ready(function() {
 		$('.animate-box').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-				
+
 				i++;
 
 				$(this.element).addClass('item-animate');
@@ -836,14 +836,14 @@ $(document).ready(function() {
 							el.removeClass('item-animate');
 						},  k * 50, 'easeInOutExpo' );
 					});
-					
+
 				}, 100);
-				
+
 			}
 
 		} , { offset: '85%' } );
 	};
-	
+
 	var stickyBanner = function() {
 		var $stickyElement = $('.sticky-banner');
 		var sticky;
@@ -856,7 +856,7 @@ $(document).ready(function() {
 	};
 
 	// Set the date we're counting down to
-		var countDownDate = new Date("Sep 20, 2025 18:00:00").getTime();
+		var countDownDate = new Date("Sep 20, 2025 17:30:00").getTime();
 
 		// Update the count down every 1 second
 		var x = setInterval(function() {
@@ -883,7 +883,7 @@ $(document).ready(function() {
 		document.getElementById("minutes").innerHTML = minutes + " <small>minutes</small> ";
 		document.getElementById("seconds").innerHTML = seconds + " <small>seconds</small> ";
 
-		// If the count down is finished, write some text 
+		// If the count down is finished, write some text
 		if (distance < 0) {
 		 clearInterval(x);
 		 document.getElementById("demo").innerHTML = "The Wedding Ceremony is Over";
@@ -913,7 +913,7 @@ function init() {
     var myLatlng = new google.maps.LatLng(11.997682, 121.915627);
     // 39.399872
     // -8.224454
-    
+
     var mapOptions = {
         // How zoomed in you want the map to start at (always required)
         zoom: 9,
@@ -921,20 +921,20 @@ function init() {
         // The latitude and longitude to center the map (always required)
         center: myLatlng,
 
-        // How you would like to style the map. 
+        // How you would like to style the map.
         scrollwheel: false,
         styles: [{"featureType":"administrative.land_parcel","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"simplified"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"hue":"#f49935"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"hue":"#fad959"}]},{"featureType":"road.arterial","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"simplified"}]},{"featureType":"road.local","elementType":"labels","stylers":[{"visibility":"simplified"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"hue":"#a1cdfc"},{"saturation":30},{"lightness":49}]}]
     };
 
-    
 
-    // Get the HTML DOM element that will contain your map 
+
+    // Get the HTML DOM element that will contain your map
     // We are using a div with id="map" seen below in the <body>
     var mapElement = document.getElementById('map');
 
     // Create the Google Map using out element and options defined above
     var map = new google.maps.Map(mapElement, mapOptions);
-    
+
     var addresses = ['Brooklyn'];
 
     for (var x = 0; x < addresses.length; x++) {
@@ -949,7 +949,7 @@ function init() {
 
         });
     }
-    
+
 }
 google.maps.event.addDomListener(window, 'load', init);
 /* Modernizr 2.6.2 (Custom Build) | MIT & BSD
@@ -974,33 +974,33 @@ void 0===c?d&&"get"in d&&null!==(e=d.get(a,b))?e:(e=n.find.attr(a,b),null==e?voi
  * to offer multiple easing options
  *
  * TERMS OF USE - jQuery Easing
- * 
- * Open source under the BSD License. 
- * 
+ *
+ * Open source under the BSD License.
+ *
  * Copyright Ã‚Â© 2008 George McGinley Smith
  * All rights reserved.
- * 
- * Redistribution and use in source and binary forms, with or without modification, 
+ *
+ * Redistribution and use in source and binary forms, with or without modification,
  * are permitted provided that the following conditions are met:
- * 
- * Redistributions of source code must retain the above copyright notice, this list of 
+ *
+ * Redistributions of source code must retain the above copyright notice, this list of
  * conditions and the following disclaimer.
- * Redistributions in binary form must reproduce the above copyright notice, this list 
- * of conditions and the following disclaimer in the documentation and/or other materials 
+ * Redistributions in binary form must reproduce the above copyright notice, this list
+ * of conditions and the following disclaimer in the documentation and/or other materials
  * provided with the distribution.
- * 
- * Neither the name of the author nor the names of contributors may be used to endorse 
+ *
+ * Neither the name of the author nor the names of contributors may be used to endorse
  * or promote products derived from this software without specific prior written permission.
- * 
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY 
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
  * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
  * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
  *  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
  *  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
- *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED 
+ *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
  * AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
- * OF THE POSSIBILITY OF SUCH DAMAGE. 
+ *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+ * OF THE POSSIBILITY OF SUCH DAMAGE.
  *
 */
 
@@ -1116,7 +1116,7 @@ jQuery.extend( jQuery.easing,
 		return c*((t=t/d-1)*t*((s+1)*t + s) + 1) + b;
 	},
 	easeInOutBack: function (x, t, b, c, d, s) {
-		if (s == undefined) s = 1.70158; 
+		if (s == undefined) s = 1.70158;
 		if ((t/=d/2) < 1) return c/2*(t*t*(((s*=(1.525))+1)*t - s)) + b;
 		return c/2*((t-=2)*t*(((s*=(1.525))+1)*t + s) + 2) + b;
 	},
@@ -1143,33 +1143,33 @@ jQuery.extend( jQuery.easing,
 /*
  *
  * TERMS OF USE - EASING EQUATIONS
- * 
- * Open source under the BSD License. 
- * 
+ *
+ * Open source under the BSD License.
+ *
  * Copyright Ã‚Â© 2001 Robert Penner
  * All rights reserved.
- * 
- * Redistribution and use in source and binary forms, with or without modification, 
+ *
+ * Redistribution and use in source and binary forms, with or without modification,
  * are permitted provided that the following conditions are met:
- * 
- * Redistributions of source code must retain the above copyright notice, this list of 
+ *
+ * Redistributions of source code must retain the above copyright notice, this list of
  * conditions and the following disclaimer.
- * Redistributions in binary form must reproduce the above copyright notice, this list 
- * of conditions and the following disclaimer in the documentation and/or other materials 
+ * Redistributions in binary form must reproduce the above copyright notice, this list
+ * of conditions and the following disclaimer in the documentation and/or other materials
  * provided with the distribution.
- * 
- * Neither the name of the author nor the names of contributors may be used to endorse 
+ *
+ * Neither the name of the author nor the names of contributors may be used to endorse
  * or promote products derived from this software without specific prior written permission.
- * 
- * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY 
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY
  * EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
  * MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
  *  COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
  *  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
- *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED 
+ *  GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED
  * AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
- *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED 
- * OF THE POSSIBILITY OF SUCH DAMAGE. 
+ *  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+ * OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
 /*!
@@ -1673,19 +1673,19 @@ $(document).ready(function() {
     });
 	};
 
-	
 
 
-	// Call the functions 
+
+	// Call the functions
 	magnifPopup();
 	magnifVideo();
 
 });
 ;(function () {
-	
+
 	'use strict';
 
-	// iPad and iPod detection	
+	// iPad and iPod detection
 	var isiPad = function(){
 		return (navigator.platform.indexOf("iPad") != -1);
 	};
@@ -1694,7 +1694,7 @@ $(document).ready(function() {
 
 	var isiPhone = function(){
 	    return (
-			(navigator.platform.indexOf("iPhone") != -1) || 
+			(navigator.platform.indexOf("iPhone") != -1) ||
 			(navigator.platform.indexOf("iPod") != -1)
 	    );
 	};
@@ -1762,11 +1762,11 @@ $(document).ready(function() {
 				}
 			}
 
-		});	
+		});
 
 	}
 
-	
+
 
 	// Click outside of the Mobile Menu
 	var mobileMenuOutsideClick = function() {
@@ -1788,7 +1788,7 @@ $(document).ready(function() {
 		$('.animate-box').waypoint( function( direction ) {
 
 			if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-				
+
 				i++;
 
 				$(this.element).addClass('item-animate');
@@ -1801,14 +1801,14 @@ $(document).ready(function() {
 							el.removeClass('item-animate');
 						},  k * 50, 'easeInOutExpo' );
 					});
-					
+
 				}, 100);
-				
+
 			}
 
 		} , { offset: '85%' } );
 	};
-	
+
 	var stickyBanner = function() {
 		var $stickyElement = $('.sticky-banner');
 		var sticky;
@@ -1818,7 +1818,7 @@ $(document).ready(function() {
 		      offset: 0
 		  })
 		}
-	}; 
+	};
 
 	// Document on load.
 	$(function(){
